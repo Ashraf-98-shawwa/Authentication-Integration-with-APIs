@@ -1,0 +1,44 @@
+.HomePage .controls {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 38px;
+  position: relative;
+}
+
+.HomePage .controls .settings {
+  padding-top: 268px;
+  display: flex;
+  flex-direction: column;
+  gap: 77px;
+}
+
+.HomePage .controls .theme {
+  margin-top: 224px;
+  background: #c1c1c1;
+  border-radius: 60px;
+  display: flex;
+  flex-direction: column;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  margin-bottom: 76px;
+}
+
+.HomePage .controls .line {
+  width: 9px;
+  height: 85%;
+  position: absolute;
+  background: #ffffff;
+  box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 38px;
+  right: -4.5px;
+  top: 89px;
+}

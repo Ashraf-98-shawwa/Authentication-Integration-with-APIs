@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+font-family: 'Inter', sans-serif;
+background: #FBFBFB;
+
+}
+
+.The-Page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+a { 
+  text-decoration: none;
+}
+
+
+/* signin page style  */
+
+
+.right-side-signin {
+  padding: 35px 200px 0px 82px;
+  width: 55%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width:1200px) {
+ .right-side-signin {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.right-side-signin .form-box {
+  margin-left: 40px;
+}
+
+.right-side-signin .form-box h1 {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 51px;
+  color: #000000;
+    text-align: center;
+
+}
+
+.right-side-signin .form-box p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #8692a6;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.right-side-signin .form-box ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+    margin-bottom: 25px;
+
+}
+.right-side-signin .form-box .or {
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+color: #BABABA;
+text-align: center;
+}
+
+.right-side-signin .form-box ul  li a {
+  width: 65px;
+  height: 65px;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.right-side-signin .form-box .input-box {
+  margin-bottom: 5px;
+}
+
+.right-side-signin .form-box form label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #696f79;
+  margin-top: 10px;
+}
+
+.right-side-signin .form-box form input {
+  width: 426px;
+  padding: 23px 0px 23px 30px;
+  outline: none;
+  border: 1px solid #8692a6;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.right-side-signin .form-box form input:focus {
+  outline: none;
+}
+
+.right-side-signin .form-box form input[type="submit"] {
+  background-color: #1565d8;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.right-side-signin a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #696f79;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  gap: 7px;
+  text-align: center;
+  display: inline-block;
+}
+
+
+
+
+
+/* signup page style  */
+.right-side {
+  padding: 35px 200px 0px 82px;
+  width: 55%;
+}
+
+@media (max-width: 1200px) {
+  .right-side {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .right-side > a {
+align-self: flex-start;
+}
+}
+
+.right-side > a {
+  color: #8692a6;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.right-side .form-box {
+  margin-left: 40px;
+}
+
+.right-side .form-box h1 {
+  font-size: 27px;
+  line-height: 36px;
+  margin-bottom: 5px;
+}
+
+.right-side .form-box p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #8692a6;
+  margin-bottom: 10px;
+}
+
+.right-side .form-box .input-box {
+  margin-bottom: 5px;
+}
+
+.right-side .form-box form label {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 19px;
+  color: #696f79;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.right-side .form-box form input {
+  width: 426px;
+  padding: 13px 0px 13px 15px;
+  outline: none;
+  border: 1px solid #8692a6;
+  border-radius: 6px;
+}
+
+.right-side .form-box form input:focus {
+  outline: none;
+}
+
+
+.right-side .form-box form input[type="submit"] {
+  background-color: #1565d8;
+  color: #fff;
+  cursor: pointer;
+}
+.right-side .form-box form input[type="checkbox"] {
+  width: fit-content;
+}
+
+.right-side .form-box form span {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  color: #bababa;
+  width: 426px;
+  text-align: center;
+  display: block;
+  margin-top: -2px;
+}
+
+.right-side .form-box form .input-box button[type="submit"] {
+  display: flex;
+  align-items: center;
+  gap: 127px;
+  width: 426px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  padding: 13px 0px 13px 15px;
+  margin-top: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+
+/* HomePageStyle Start */
+.HomePage {
+  display: grid;
+    grid-template-columns: 113px auto;
+    background-color: #FBFBFB;
+    min-height: 100vh;
+}
+
+/* HomePageStyle End */

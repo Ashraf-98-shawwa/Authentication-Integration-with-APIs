@@ -1,0 +1,44 @@
+.right-side .form-box form .password-strength {
+  margin-top: 5px;
+  background: #c4c4c4;
+  border-radius: 4px;
+  height: 4px;
+  position: relative;
+  width: 426px;
+}
+
+.right-side .form-box form .password-strength::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: red;
+  position: absolute;
+  left: 0;
+  width: 25%;
+}
+
+.right-side .form-box form .password-strength.short::after {
+  background-color: red;
+  
+}
+.right-side .form-box form .password-strength.not-bad::after {
+  background-color:#ffc107;
+    width: 40%;
+}
+.right-side .form-box form .password-strength.good::after {
+  background-color:#ff922d;
+    width: 75%;
+}
+.right-side .form-box form .password-strength.strong::after {
+  background-color:green;
+    width: 100%;
+}
+
+
+.right-side .form-box form .password-check-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffc107;
+  margin-top: 5px;
+}

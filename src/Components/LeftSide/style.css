@@ -1,0 +1,94 @@
+/* sign-up styles  */
+.left-sign-up {
+  height: 100vh;
+  background: url("../../Images/hand-bg.png") no-repeat center center;
+  width: 45%;
+  background-size: cover;
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .left-sign-up {
+    display: block;
+  }
+}
+
+.left-sign-up .overlay .sign-up-logo {
+  padding-top: 35px;
+  padding-bottom: 94px;
+}
+
+.left-sign-up .overlay .dots {
+  display: inline-block;
+  padding-left: 220px;
+  padding-bottom: 20px;
+}
+
+.left-sign-up .overlay .commas,
+.left-sign-in .commas {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  color: #00daf7;
+  font-family: "Gayathri";
+}
+
+.left-sign-up .overlay .paragraph,
+.left-sign-in .paragraph {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+  color: #ffffff;
+  font-size: 20px;
+  width: 473px;
+}
+.left-sign-up .overlay .Name,
+.left-sign-in .Name {
+  padding-top: 59px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 38px;
+  color: #ffffff;
+  display: block;
+}
+
+.left-sign-up .overlay .triangle {
+  display: inline-block;
+  padding: 27px 0 0 400px;
+}
+
+/* Login styles  */
+.left-sign-in {
+  height: 100vh;
+  width: 45%;
+  padding: 35px 87px 0px 82px;
+  position: relative;
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .left-sign-in {
+    display: block;
+  }
+}
+
+.left-sign-in .sign-in-logo {
+  padding-bottom: 40px;
+}
+
+.left-sign-in .commas {
+  color: #bababa;
+}
+
+.left-sign-in .paragraph,
+.left-sign-in .Name {
+  color: #696f79;
+}
+
+.left-sign-in .joystic {
+  width: 37%;
+  height: 37%;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+}

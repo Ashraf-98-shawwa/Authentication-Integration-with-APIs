@@ -1,0 +1,15 @@
+.HomePage .home-content {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  padding: 132px 0px 79px 40px;
+  position: relative;
+}
+
+.HomePage .home-content .Lower-container{
+  
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}

@@ -1,0 +1,13 @@
+.HomePage .home-content .Lower-container .Lastplayed h2 {
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 43px;
+  color: #000000;
+  margin-bottom: 19px;
+}
+
+.HomePage .home-content .Lower-container .Lastplayed .Played-games-box {
+  display: flex;
+  flex-direction: column;
+}
+

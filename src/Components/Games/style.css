@@ -1,0 +1,13 @@
+.HomePage .home-content .Games {
+  margin-bottom: 84px;
+  width: 85vw ;
+}
+
+
+.swiper {
+  cursor: pointer;
+}
+
+.swiper-slide {
+  width: 600px !important;
+}
