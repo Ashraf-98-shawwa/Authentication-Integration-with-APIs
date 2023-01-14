@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import swal from "sweetalert";
+import { API_URL } from "../API";
 import Controls from "../Components/Controls";
 import User from "../Components/User";
 
@@ -31,14 +32,11 @@ export default class UsersList extends Component {
 
   deleteUser = async (id) => {
     try {
-      const res = await axios.delete(
-        `https://react-tt-api.onrender.com/api/users/${id}`,
-        {
-          headers: {
-            Authorization: `Bearer ${this.token}`,
-          },
-        }
-      );
+      const res = await axios.delete(`${API_URL}/users/${id}`, {
+        headers: {
+          Authorization: `Bearer ${this.token}`,
+        },
+      });
       swal({
         title: "Success!",
         text: `${res.data.message}  Successfully !!`,

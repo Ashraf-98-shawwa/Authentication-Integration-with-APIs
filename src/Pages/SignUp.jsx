@@ -6,6 +6,7 @@ import swal from "sweetalert";
 import { Link } from "react-router-dom";
 import Input from "../Components/Input";
 import axios from "axios";
+import { API_URL } from "../API";
 
 const regularExpression =
   /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
@@ -94,7 +95,7 @@ export default class SignUp extends Component {
       })
       .then(async () => {
         const res = await axios.post(
-          "https://react-tt-api.onrender.com/api/users/signup",
+          `${API_URL}/users/signup`,
           {
             name: this.state.name,
             email: this.state.email,

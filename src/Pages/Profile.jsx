@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import { API_URL } from "../API";
 import Controls from "../Components/Controls";
 import User from "../Components/User";
 // import Content from "../Components/Content";
@@ -17,14 +18,11 @@ export default class Profile extends Component {
     const token = localStorage.getItem("token");
 
     try {
-      const res = await axios.get(
-        "https://react-tt-api.onrender.com/api/users/profile",
-        {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        }
-      );
+      const res = await axios.get(`${API_URL}/users/profile`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
       this.setState({ name: res.data.name });
       this.setState({ email: res.data.email });
       this.setState({ admin: res.data.isAdmin ? "Yes" : "No" });

@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { Component } from "react";
 import { useParams } from "react-router-dom";
+import { API_URL } from "../API";
 import Controls from "../Components/Controls";
 import User from "../Components/User";
 
@@ -22,14 +23,11 @@ class Details extends Component {
     const token = localStorage.getItem("token");
 
     try {
-      const res = await axios.get(
-        `https://react-tt-api.onrender.com/api/users/${this.props.id}`,
-        {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        }
-      );
+      const res = await axios.get(`${API_URL}/users/${this.props.id}`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
       this.setState({ name: res.data.name });
       this.setState({ email: res.data.email });
       this.setState({ id: res.data._id });

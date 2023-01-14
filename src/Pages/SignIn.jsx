@@ -9,6 +9,7 @@ import * as yup from "yup";
 import swal from "sweetalert";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { API_URL } from "../API";
 
 const regularExpression =
   /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
@@ -52,7 +53,7 @@ export default class SignIn extends Component {
       )
       .then(async () => {
         const res = await axios.post(
-          "https://react-tt-api.onrender.com/api/users/login",
+          `${API_URL}/users/login`,
           {
             email: this.state.email,
             password: this.state.password,
