@@ -53,10 +53,11 @@ export default class Profile extends Component {
           {this.state.isLoading ? (
             "Loading ..."
           ) : (
-            <>
-              <h4>Name :{this.state.name}</h4>
-              <h4 style={{ margin: "25px 0px" }}>Email :{this.state.email}</h4>
-              <h4>Admin : {this.state.admin}</h4>
+              <>
+                <h3 style={{ marginBottom: "25px" }}>My Profile</h3>
+              <p>Name :{this.state.name}</p>
+              <p style={{ margin: "10px 0px" }}>Email :{this.state.email}</p>
+              <p>Admin : {this.state.admin}</p>
             </>
           )}
         </div>

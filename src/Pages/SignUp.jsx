@@ -116,7 +116,7 @@ export default class SignUp extends Component {
         });
       })
       .catch((e) => {
-        console.log(e.message || e.errors);
+        this.setState({ isloading: false });
         swal({
           title: "Error!",
           text: `${e.message || e.errors}`,

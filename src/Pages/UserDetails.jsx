@@ -1,6 +1,8 @@
 import axios from "axios";
 import React, { Component } from "react";
 import { useParams } from "react-router-dom";
+import Controls from "../Components/Controls";
+import User from "../Components/User";
 
 export default function UserDetails() {
   const { id } = useParams();
@@ -28,7 +30,6 @@ class Details extends Component {
           },
         }
       );
-      console.log(res.data);
       this.setState({ name: res.data.name });
       this.setState({ email: res.data.email });
       this.setState({ id: res.data._id });
@@ -42,33 +43,39 @@ class Details extends Component {
 
   render() {
     return (
-      <ul
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: "10px",
-          padding: "150px",
-        }}
-      >
-        <h3>User Details for {this.state.name}:</h3>
+      <section className="HomePage">
+        <Controls />
 
-        {this.state.isLoading ? (
-          "Loading ..."
-        ) : (
-          <li
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: "10px",
-            }}
-          >
-            <p>ID :{this.state.id}</p>
-            <p>Name :{this.state.name}</p>
-            <p>Email :{this.state.email}</p>
-            <p>Admin :{this.state.admin}</p>
-          </li>
-        )}
-      </ul>
+        <User />
+
+        <ul
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "10px",
+            padding: "150px",
+          }}
+        >
+          <h3>User Details for {this.state.name}:</h3>
+
+          {this.state.isLoading ? (
+            "Loading ..."
+          ) : (
+            <li
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "10px",
+              }}
+            >
+              <p>ID :{this.state.id}</p>
+              <p>Name :{this.state.name}</p>
+              <p>Email :{this.state.email}</p>
+              <p>Admin :{this.state.admin}</p>
+            </li>
+          )}
+        </ul>
+      </section>
     );
   }
 }

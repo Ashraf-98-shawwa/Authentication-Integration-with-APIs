@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import swal from "sweetalert";
+import Controls from "../Components/Controls";
 import User from "../Components/User";
 
 export default class UsersList extends Component {
@@ -52,7 +53,9 @@ export default class UsersList extends Component {
 
   render() {
     return (
-      <>
+      <section className="HomePage">
+        <Controls />
+
         <User />
         <ul
           style={{
@@ -62,7 +65,7 @@ export default class UsersList extends Component {
             padding: "150px",
           }}
         >
-          UsersList :
+          <h3>Users List :</h3>
           {this.state.isLoading
             ? "Loading .. "
             : this.state.users.map((item, index) => (
@@ -70,7 +73,10 @@ export default class UsersList extends Component {
                   style={{
                     display: "flex",
                     justifyContent: "space-between",
+                    alignItems: "center",
                     width: "65%",
+                    border: "1px solid black",
+                    padding: "5px",
                   }}
                   key={item._id}
                 >
@@ -93,7 +99,7 @@ export default class UsersList extends Component {
                 </li>
               ))}
         </ul>
-      </>
+      </section>
     );
   }
 }

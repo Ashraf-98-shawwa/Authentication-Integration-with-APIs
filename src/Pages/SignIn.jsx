@@ -24,11 +24,11 @@ export default class SignIn extends Component {
   schema = yup.object().shape({
     password: yup
       .string()
-      .min(8, "Password should be more than 8 characters")
-      .matches(
-        regularExpression,
-        "Password should be strong (numbers,capital and small letters ,sympol"
-      )
+      // .min(8, "Password should be more than 8 characters")
+      // .matches(
+      //   regularExpression,
+      //   "Password should be strong (numbers,capital and small letters ,sympol"
+      // )
       .required(),
 
     email: yup.string().email().required(),
