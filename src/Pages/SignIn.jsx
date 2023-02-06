@@ -11,8 +11,8 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import { API_URL } from "../API";
 
-const regularExpression =
-  /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+// const regularExpression =
+//   /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
 
 export default class SignIn extends Component {
   state = {
